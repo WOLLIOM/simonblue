@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://wolliom.github.io/simonmaxam/sitemap.xml
+Sitemap: https://simonblue.pages.dev/sitemap.xml

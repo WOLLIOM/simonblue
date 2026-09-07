@@ -5,25 +5,31 @@ kept separate from the SIMAX studio site.
 
 - `index.html` — the whole site (no build step, no dependencies except Google Fonts).
 
-## Deploy to GitHub Pages
+## Deploy (Cloudflare Pages)
 
-All the URLs in this project assume the repo is named **`simonmaxam`** under the
-account **`wolliom`**, so the live URL is `https://wolliom.github.io/simonmaxam/`.
-If you use a different repo name, find-and-replace that URL across `index.html`,
-`robots.txt`, and `sitemap.xml`.
+Repo: `WOLLIOM/simonblue`. Live URL will be `https://simonblue.pages.dev/`.
+All URLs in `index.html`, `robots.txt`, `sitemap.xml` are already set to that.
 
-1. Create a repo named `simonmaxam`, push this folder to it.
-2. Repo → **Settings → Pages** → Source: **Deploy from a branch**, branch `main`, folder `/ (root)`.
-3. Wait ~1 min, then open `https://wolliom.github.io/simonmaxam/`.
+This is a plain HTML site — **there is no build step**. In the Cloudflare Pages
+build configuration:
+
+| Field | Value |
+|---|---|
+| Framework preset | None |
+| Build command | **leave empty** (delete `npm run build`) |
+| Build output directory | **`/`** (root — not `out`) |
+| Root directory | leave blank |
+
+Then push this folder to `main` and it deploys automatically.
 
 ### Then submit to Google
 
-1. Go to [Google Search Console](https://search.google.com/search-console) → add a
-   **URL prefix** property for `https://wolliom.github.io/simonmaxam/`.
-2. Verify with the **HTML tag** method — it gives you a `<meta name="google-site-verification" ...>`
-   tag; paste it into the `<head>` of `index.html`, push, then click Verify.
+1. [Google Search Console](https://search.google.com/search-console) → add a
+   **URL prefix** property for `https://simonblue.pages.dev/`.
+2. Verify with the **HTML tag** method — paste the `<meta name="google-site-verification" ...>`
+   tag into the `<head>` of `index.html`, push, then click Verify.
 3. **Sitemaps** → submit `sitemap.xml`.
-4. **URL Inspection** → enter your URL → **Request indexing**.
+4. **URL Inspection** → enter the URL → **Request indexing**.
 
 ## Edit
 
@@ -34,8 +40,8 @@ Everything is in `index.html`:
 
 ## To fill in later
 
-- If the repo name isn't `simonmaxam`, update the live URL everywhere (see Deploy above).
-- Add the Google Search Console verification meta tag (see below).
+- Add the Google Search Console verification meta tag (see Deploy above).
+- If you add a custom domain later, find-and-replace `https://simonblue.pages.dev/` everywhere.
 - Confirm the Bonterra live URL (currently links the GitHub repo).
 - Swap in project images if you want thumbnails on hover.
 
