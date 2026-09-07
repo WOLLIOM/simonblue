@@ -7,29 +7,29 @@ kept separate from the SIMAX studio site.
 
 ## Deploy (Cloudflare Pages)
 
-Repo: `WOLLIOM/simonblue`. Live URL will be `https://simonblue.pages.dev/`.
-All URLs in `index.html`, `robots.txt`, `sitemap.xml` are already set to that.
+- **Source repo:** `WOLLIOM/simonblue`
+- **Live URL:** `https://simonmaxam.pages.dev/` (this new hub site replaced the old SIMAX
+  portfolio at that URL). All URLs in `index.html`, `robots.txt`, `sitemap.xml` point here.
+- **Old SIMAX portfolio** now lives at `https://simax.rf.gd/` — the hub links to it.
 
-This is a plain HTML site — **there is no build step**. In the Cloudflare Pages
-build configuration:
+Plain HTML site, **no build step**. Cloudflare Pages build config:
 
 | Field | Value |
 |---|---|
 | Framework preset | None |
-| Build command | **leave empty** (delete `npm run build`) |
-| Build output directory | **`/`** (root — not `out`) |
-| Root directory | leave blank |
+| Build command | **empty** (delete `npm run build`) |
+| Build output directory | **`/`** (not `out`) |
+| Root directory | blank |
 
-Then push this folder to `main` and it deploys automatically.
+Push to `main` → deploys automatically.
 
 ### Then submit to Google
 
-1. [Google Search Console](https://search.google.com/search-console) → add a
-   **URL prefix** property for `https://simonblue.pages.dev/`.
-2. Verify with the **HTML tag** method — paste the `<meta name="google-site-verification" ...>`
-   tag into the `<head>` of `index.html`, push, then click Verify.
-3. **Sitemaps** → submit `sitemap.xml`.
-4. **URL Inspection** → enter the URL → **Request indexing**.
+`simonmaxam.pages.dev` already has a Search Console property with 1 indexed page — reuse it.
+
+1. **Sitemaps** → submit `sitemap.xml`.
+2. **URL Inspection** → `https://simonmaxam.pages.dev/` → **Request indexing**
+   (do this again after the new content deploys so Google re-crawls it).
 
 ## Edit
 
@@ -40,9 +40,10 @@ Everything is in `index.html`:
 
 ## To fill in later
 
-- Add the Google Search Console verification meta tag (see Deploy above).
-- If you add a custom domain later, find-and-replace `https://simonblue.pages.dev/` everywhere.
+- If you add a custom domain later, find-and-replace `https://simonmaxam.pages.dev/` everywhere.
 - Confirm the Bonterra live URL (currently links the GitHub repo).
+- `simax.rf.gd` (free InfinityFree host) often blocks search crawlers with a 403 — if you
+  want the old SIMAX portfolio indexed too, move it to Cloudflare Pages / Netlify.
 - Swap in project images if you want thumbnails on hover.
 
 ## SEO / identity
