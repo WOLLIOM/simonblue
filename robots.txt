@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://wolliom.github.io/simonmaxam/sitemap.xml
