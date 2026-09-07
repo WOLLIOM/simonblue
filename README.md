@@ -41,10 +41,22 @@ Everything is in `index.html`:
 ## To fill in later
 
 - If you add a custom domain later, find-and-replace `https://simonmaxam.pages.dev/` everywhere.
-- Confirm the Bonterra live URL (currently links the GitHub repo).
-- `simax.rf.gd` (free InfinityFree host) often blocks search crawlers with a 403 — if you
-  want the old SIMAX portfolio indexed too, move it to Cloudflare Pages / Netlify.
 - Swap in project images if you want thumbnails on hover.
+
+## Linked sites (the drawing set)
+
+| Project | URL |
+|---|---|
+| YŪGEN (omakase restaurant) | https://yugen-6b9.pages.dev/ |
+| Bonterra Trattoria (Calgary) | https://bonterra-website.pages.dev/ |
+| Aurelio (resort, WebGL) | https://wolliom.github.io/aurelio/ |
+| SIMAX Showcase (Three.js) | https://wolliom.github.io/vite-threejs-premium/ |
+| MuseumVerse | https://wolliom.github.io/museumverse/ |
+| BarberVerse | https://wolliom.github.io/Barber/ |
+| SIMAX studio / SOLARIS / architecture | https://maxam.vercel.app/ |
+
+`maxam.vercel.app` is the SIMAX portfolio on Vercel — used instead of `simax.rf.gd`
+(free InfinityFree host, which 403s search crawlers).
 
 ## SEO / identity
 
