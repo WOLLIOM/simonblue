@@ -205,7 +205,7 @@
   }
 
   /* credentials */
-  .cred-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+  .cred-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 20px; }
   .cred-card { display: block; border: 1px solid var(--line); background: var(--panel); transition: transform .25s ease, border-color .25s ease; }
   .cred-card:hover { transform: translateY(-3px); border-color: var(--accent); }
   .cred-card img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 2.83; object-fit: cover; }
@@ -397,9 +397,16 @@
     <div class="sec-head">
       <span class="idx">03</span>
       <h2>Credentials</h2>
-      <span class="tag" style="margin-left:auto">18 on file</span>
+      <span class="tag" style="margin-left:auto">19 on file</span>
     </div>
     <div class="cred-grid">
+      <a class="cred-card" href="/certs/google-business-intelligence.jpg" target="_blank" rel="noopener">
+        <img src="/certs/google-business-intelligence.jpg" alt="Google Business Intelligence Professional Certificate" loading="lazy" />
+        <div class="meta">
+          <div class="t">Google Business Intelligence</div>
+          <div class="i">Google · Coursera · Sep 2026</div>
+        </div>
+      </a>
       <a class="cred-card" href="/certs/advanced-seo.jpg" target="_blank" rel="noopener">
         <img src="/certs/advanced-seo.jpg" alt="Advanced SEO: Developing an SEO-Friendly Website certificate" loading="lazy" />
         <div class="meta">
@@ -429,7 +436,7 @@
         </div>
       </a>
     </div>
-    <p class="cred-more"><a href="/credentials.html" class="tag" style="border-bottom:1px solid var(--accent)">See all 18 credentials →</a></p>
+    <p class="cred-more"><a href="/credentials.html" class="tag" style="border-bottom:1px solid var(--accent)">See all 19 credentials →</a></p>
   </section>
 
   <section id="contact">
