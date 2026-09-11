@@ -12,4 +12,10 @@
       <image:caption>Simon Maxam performing on guitar at Ironwood Stage &amp; Grill in Calgary, Alberta.</image:caption>
     </image:image>
   </url>
+  <url>
+    <loc>https://simonmaxam.pages.dev/credentials.html</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
 </urlset>

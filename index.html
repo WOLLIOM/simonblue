@@ -204,6 +204,18 @@
     .work-row .spec { grid-column: 2; text-align: left; margin-top: 8px; }
   }
 
+  /* credentials */
+  .cred-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+  .cred-card { display: block; border: 1px solid var(--line); background: var(--panel); transition: transform .25s ease, border-color .25s ease; }
+  .cred-card:hover { transform: translateY(-3px); border-color: var(--accent); }
+  .cred-card img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 2.83; object-fit: cover; }
+  .cred-card .meta { padding: 12px 14px; }
+  .cred-card .meta .t { font-family: "Bricolage Grotesque", sans-serif; font-weight: 600; font-size: 0.92rem; line-height: 1.25; }
+  .cred-card .meta .i { font-family: "Space Mono", monospace; font-size: 10.5px; color: var(--muted); margin-top: 6px; letter-spacing: .04em; }
+  .cred-more { margin-top: 24px; display: flex; align-items: center; gap: 10px; }
+  @media (max-width: 900px) { .cred-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 480px) { .cred-grid { grid-template-columns: 1fr; } }
+
   /* marquee */
   .marquee { overflow: hidden; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 18px 0; }
   .marquee div { display: flex; gap: 46px; white-space: nowrap; width: max-content; animation: slide 32s linear infinite; }
@@ -249,6 +261,7 @@
   <a href="#top" class="tag" style="letter-spacing:.2em;color:var(--ink)">S. MAXAM</a>
   <nav>
     <a href="#work">Work</a>
+    <a href="#credentials">Credentials</a>
     <a href="#about">Notes</a>
     <a href="#contact">Contact</a>
   </nav>
@@ -380,9 +393,48 @@
     </ol>
   </section>
 
-  <section id="contact">
+  <section id="credentials">
     <div class="sec-head">
       <span class="idx">03</span>
+      <h2>Credentials</h2>
+      <span class="tag" style="margin-left:auto">18 on file</span>
+    </div>
+    <div class="cred-grid">
+      <a class="cred-card" href="/certs/advanced-seo.jpg" target="_blank" rel="noopener">
+        <img src="/certs/advanced-seo.jpg" alt="Advanced SEO: Developing an SEO-Friendly Website certificate" loading="lazy" />
+        <div class="meta">
+          <div class="t">Advanced SEO: Developing an SEO-Friendly Website</div>
+          <div class="i">LinkedIn Learning · Jul 2026</div>
+        </div>
+      </a>
+      <a class="cred-card" href="/certs/adobe-photoshop.jpg" target="_blank" rel="noopener">
+        <img src="/certs/adobe-photoshop.jpg" alt="Essential Skills in Adobe Photoshop 2025 certificate" loading="lazy" />
+        <div class="meta">
+          <div class="t">Essential Skills in Adobe Photoshop 2025</div>
+          <div class="i">LinkedIn Learning · Adobe · Aug 2026</div>
+        </div>
+      </a>
+      <a class="cred-card" href="/certs/blender-4.jpg" target="_blank" rel="noopener">
+        <img src="/certs/blender-4.jpg" alt="Blender 4.0 Essential Training certificate" loading="lazy" />
+        <div class="meta">
+          <div class="t">Blender 4.0 Essential Training</div>
+          <div class="i">LinkedIn Learning · Aug 2026</div>
+        </div>
+      </a>
+      <a class="cred-card" href="/certs/revit-to-unreal.jpg" target="_blank" rel="noopener">
+        <img src="/certs/revit-to-unreal.jpg" alt="Revit to Unreal for Architecture, Visualization, and VR certificate" loading="lazy" />
+        <div class="meta">
+          <div class="t">Revit to Unreal for Architecture, Visualization, and VR</div>
+          <div class="i">LinkedIn Learning · Aug 2026</div>
+        </div>
+      </a>
+    </div>
+    <p class="cred-more"><a href="/credentials.html" class="tag" style="border-bottom:1px solid var(--accent)">See all 18 credentials →</a></p>
+  </section>
+
+  <section id="contact">
+    <div class="sec-head">
+      <span class="idx">04</span>
       <h2>Get in touch</h2>
     </div>
     <p style="max-width:46ch;color:var(--muted)">For collaboration, commissions, or a look at work that isn't public yet.</p>
