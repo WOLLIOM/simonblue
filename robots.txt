@@ -1,4 +1,5 @@
-User-agent: *
+User-Agent: *
 Allow: /
 
+Host: https://simonmaxam.pages.dev
 Sitemap: https://simonmaxam.pages.dev/sitemap.xml
